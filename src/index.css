@@ -1,6 +1,7 @@
 body{
   margin: 0;
   font-family: sans-serif;
+  background-color: rgb(40,43,52);
 }
 
 video{
@@ -24,19 +25,19 @@ margin-top: -6px;
 }
 
 #algorithms{
-  background-color: tomato;
+  background-color: rgb(55,71,132);
 }
 
 #about{
-  background-color:gold;
+  background-color:rgb(252,204,6);
 }
 
 #contact{
-  background-color:aqua
+  background-color:rgb(247,233,160)
 }
 
 #projects{
-  background-color: teal;
+  background-color: rgb(246,109,110);
 }
 
 #algorithms, #about, #contact, #projects{
@@ -45,17 +46,27 @@ margin-top: -6px;
   justify-content: center;
   align-items: center;
   height: 200px;
-  margin: 1px;
+  margin: 4px;
+  border-radius: 10px;
 }
 
-#v1{
-  visibility: visible;
+.video{
+  opacity: 0%;
+  transition: opacity 2s ease;
+  
 }
 
-#v2{
-  visibility: visible;
+.video:hover{
+  opacity: 100%;
 }
 
-#v3{
-  visibility: visible;
+.vidContainer{
+  border-radius: 10px;
+  border: 1px solid rgb(125,132,143);
+  height: 198px;
+
+}
+
+#v1, #v2, #v3{
+  border-radius: 10px;
 }
