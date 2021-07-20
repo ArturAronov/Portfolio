@@ -1,8 +1,6 @@
-import {DivCreator} from '../utils/divCreator';
-
 export const Algorithms=function(){  
   return(
-    <div id='algorithms' style={DivCreator()}>
+    <div id='algorithms'  className='desktopBox'>
       Algorithms
     </div>
   )

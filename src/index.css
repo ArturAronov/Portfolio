@@ -1,31 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+/* Menu font */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+/* Heading front */
+
 body{
   margin: 0;
-  font-family: sans-serif;
+  font-family: mono-space;
   background-color: rgb(40,43,52);
+  
 }
 
 video{
-margin-top: -6px;
-  height: 196px;
-  margin: 1px
+  height: 198px;
 }
 
 #container{
-  width: 570px;
-  position: absolute;
-  left: 30%;
-  top: 10%;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  /* This centers the menu in the middle of the page */
+}
+
+#desktopMenu{
+
+  width: 600px;
   display: flex;
   flex-direction: row;
-  flex-flow: row wrap;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
- align-content: center;
+  align-content: center;
+  margin: 20px;
+  /* This centers the menu boxes relative to each other. */
 }
 
 #algorithms{
-  background-color: rgb(55,71,132);
+  background-color: rgb(168,208,231);
 }
 
 #about{
@@ -40,14 +50,26 @@ margin-top: -6px;
   background-color: rgb(246,109,110);
 }
 
-#algorithms, #about, #contact, #projects{
+#desktopHeading{
+
+}
+
+.desktopBox{
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex: 1;
+  /* The flex above centers text in the box */
+
+  min-width: 120px;
   height: 200px;
   margin: 4px;
   border-radius: 10px;
+  font-family: 'Courier Prime', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 800;
+
 }
 
 .video{
@@ -64,6 +86,7 @@ margin-top: -6px;
   border-radius: 10px;
   border: 1px solid rgb(125,132,143);
   height: 198px;
+  margin: 4px;
 
 }
 

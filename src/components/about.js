@@ -1,8 +1,7 @@
-import {DivCreator} from '../utils/divCreator';
 
 export const About=function(){
   return(
-    <div id='about' style={DivCreator()}>
+    <div id='about' className='desktopBox'>
       About
     </div>
   )
