@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+/* Menu font 'Courier Prime' */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+/* Header intro and body font 'Source Sans Pro', sans-serif*/
+
+body{
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: rgb(40,43,52); 
+}
+
+h1{
+  margin: 0;
+}

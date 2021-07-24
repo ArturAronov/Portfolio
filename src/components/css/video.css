@@ -1,0 +1,42 @@
+video{
+  height: 198px;
+}
+
+.video{
+  opacity: 0%;
+  transition: opacity 2s ease;
+  border-radius: 10px;
+}
+
+.video:hover{
+  opacity: 100%;
+}
+
+.vidContainer{
+  border-radius: 10px;
+  border: 1px solid rgb(125,132,143);
+  height: 198px;
+  margin: 4px;
+}
+
+@media screen and (max-width: 560px){
+  video{
+    height: 150px;
+  }
+
+  .vidContainer{
+    height: 150px;
+  }
+}
+
+@media screen and (max-height: 500px){
+  video, .video, .vidContainer{
+    display: none;
+  }
+}
+
+@media screen and (max-height: 700px){
+  video, .video, .vidContainer{
+    display: none;
+  }
+}

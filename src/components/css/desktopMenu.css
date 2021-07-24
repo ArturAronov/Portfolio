@@ -1,0 +1,89 @@
+#desktopMenu{
+  min-height: 500px;
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  
+  /* This centers the menu boxes relative to each other. */
+}
+
+#menuContainer{
+  display: flex;
+  height: 70vh;
+  width: 100vw;
+  justify-content: center;
+  /* This centers the menu in the middle of the page */
+}
+
+.desktopBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  /* The flex above centers text in the box */
+
+  min-width: 120px;
+  height: 200px;
+  margin: 4px;
+  border-radius: 10px;
+  font-family: 'Courier Prime', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+
+#algorithms{
+  background-color: rgb(99,175,244);
+}
+
+#about{
+  background-color:rgb(252,204,6);
+}
+
+#contact{
+  background-color:rgb(228,192,114);
+}
+
+#projects{
+  background-color: rgb(224,105,116);
+}
+
+@media screen and (max-width: 420px){
+  #desktopMenu{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 560px){
+  #desktopMenu{
+    width: 440px;
+  }
+  .desktopBox{
+    height: 150px;
+  }
+}
+
+@media screen and (max-height: 700px){
+  #desktopMenu{
+    min-height: 100px;
+  }
+  #menuContainer{
+    height: 330px;
+  }
+
+  .desktopBox{
+    max-width: 180px;
+    height: 140px;
+  }
+}
+
+
+@media screen and (max-height: 500px){
+  #menuContainer{
+    display: none;
+  }
+}
