@@ -1,4 +1,4 @@
-import Video from '../vids/2.mp4'
+import Video from '../../vids/2.mp4'
 
 export const Vid2=function(){
   return(

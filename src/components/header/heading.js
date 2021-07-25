@@ -1,6 +1,6 @@
 export const Heading=function(){
   return(
-    <div id='heading'>
+    <div>
       <h1>
         Artur Aronov
       </h1>
