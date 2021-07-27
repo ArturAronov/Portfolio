@@ -9,18 +9,23 @@ import {Vid1} from './desktopMenu/vid1';
 import {Vid2} from './desktopMenu/vid2';
 
 import {Heading} from './header/heading';
-import {Icons} from './header/icons';
 import {HeaderMenu} from './header/headerMenu';
 
-import {changeBackGround, changeText, changeBody} from './../utils/darkLight';
-import {darkHeader, lightHeader, lightTxt, darkTxt, darkBody, lightBody} from './../utils/colors'
+import {toggleColors, toggleIcons} from './../utils/headerToggles';
+import {darkHeader, lightHeader, lightTxt, darkTxt, darkBody, lightBody} from './../utils/colors';
+
+import {MoonFill} from 'react-bootstrap-icons';
+import {Sun} from 'react-bootstrap-icons';
 
 
 
 export const App=function(){
   const [background, setBackground]=useState(darkHeader);
-const [text, setText]=useState(lightTxt);
-const [body, setBody]=useState(darkBody);
+  const [text, setText]=useState(lightTxt);
+  const [body, setBody]=useState(darkBody);
+  const [sunDisplay, setSunDisplay]=useState('flex')
+  const [moonDisplay, setMoonDisplay]=useState('none')
+
   return(
     <div 
       id='desktopContainer'
@@ -39,11 +44,14 @@ const [body, setBody]=useState(darkBody);
           <Heading/>
           <div 
             onClick={()=>{
-            changeBackGround(background, setBackground, darkHeader, lightHeader);
-            changeText(text, setText, darkTxt, lightTxt);
-            changeBody(body, setBody, lightBody, darkBody)
+              toggleColors(background, setBackground, darkHeader, lightHeader);
+              toggleColors(text, setText, darkTxt, lightTxt);
+              toggleColors(body, setBody, lightBody, darkBody);
+              toggleIcons(sunDisplay, setSunDisplay, 'flex', 'none')
+              toggleIcons(moonDisplay, setMoonDisplay, 'flex', 'none')
           }}>
-            <Icons/>
+            <Sun size={20} style={{display: sunDisplay}}/>
+            <MoonFill size={20} style={{display: moonDisplay}}/>
           </div>
         </div>
         <HeaderMenu/>

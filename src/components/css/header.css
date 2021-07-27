@@ -1,12 +1,10 @@
 #desktopHeading{
-  background-color: rgb(33,37,43);
   color: rgb(228, 227, 227);
   min-height: 190px;
   max-height: 190px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 }
 
 #headerMenu{
