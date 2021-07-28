@@ -41,6 +41,9 @@
   font-weight: 800;
 }
 
+.toggle{
+  padding: 10px 20px;
+}
 
 #algorithms{
   background-color: rgb(99,175,244);
@@ -87,9 +90,9 @@
   }
 }
 
-
 @media screen and (max-height: 500px){
   #menuContainer{
     display: none;
   }
 }
+/* Since the boxes might take a lots of space in mobile screen, I've removed them if the screen withd is less than 500px */

@@ -8,7 +8,7 @@
 }
 
 #headerMenu{
-  display: flex;
+  display: none;
   /* initial value of this should be none */
   justify-content: center;
   flex-wrap: wrap;
@@ -27,7 +27,6 @@
 .headerMenuElement{
   padding: 20px 20px;
 }
-
 
 @media screen and (max-width: 430px){
   .headerMenuElement{
@@ -76,3 +75,4 @@
     display: flex;
   }
 }
+/* Since the boxes might take a lots of space in mobile screen, I've removed them if the screen withd is less than 500px */

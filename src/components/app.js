@@ -14,8 +14,7 @@ import {HeaderMenu} from './header/headerMenu';
 import {toggleColors, toggleIcons} from './../utils/headerToggles';
 import {darkHeader, lightHeader, lightTxt, darkTxt, darkBody, lightBody} from './../utils/colors';
 
-import {MoonFill} from 'react-bootstrap-icons';
-import {Sun} from 'react-bootstrap-icons';
+import {MoonFill, Sun} from 'react-bootstrap-icons';
 
 
 
@@ -43,20 +42,25 @@ export const App=function(){
         <div id='header'>
           <Heading/>
           <div 
+            className='toggle'
             onClick={()=>{
               toggleColors(background, setBackground, darkHeader, lightHeader);
               toggleColors(text, setText, darkTxt, lightTxt);
               toggleColors(body, setBody, lightBody, darkBody);
               toggleIcons(sunDisplay, setSunDisplay, 'flex', 'none')
               toggleIcons(moonDisplay, setMoonDisplay, 'flex', 'none')
-          }}>
-            <Sun size={20} style={{display: sunDisplay}}/>
-            <MoonFill size={20} style={{display: moonDisplay}}/>
+            }}>
+              <Sun size={20} style={{display: sunDisplay}}/>
+              <MoonFill size={20} style={{display: moonDisplay}}/>
           </div>
         </div>
-        <HeaderMenu/>
+        <div>
+          <HeaderMenu/>
+        </div>
+        
       </div>
-      <div id='menuContainer'>
+      <div 
+        id='menuContainer'>
         <div id='desktopMenu'>
           <About/>
           <Vid1/>
