@@ -23,8 +23,8 @@ export const App=function(){
   const [background, setBackground]=useState(darkHeader);
   const [text, setText]=useState(lightTxt);
   const [body, setBody]=useState(darkBody);
-  const [sunDisplay, setSunDisplay]=useState('flex')
-  const [moonDisplay, setMoonDisplay]=useState('none')
+  const [sunDisplay, setSunDisplay]=useState('flex');
+  const [moonDisplay, setMoonDisplay]=useState('none');
 
   return(
     <div 
