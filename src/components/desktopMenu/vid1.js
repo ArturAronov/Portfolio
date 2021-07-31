@@ -4,7 +4,7 @@ export const Vid1=function(){
   return(
     <div className='vidContainer'>
       <video 
-        id='v2'
+        id='v1'
         className='video'
         autoPlay 
         muted 

@@ -1,5 +1,6 @@
 video{
   height: 198px;
+  
 }
 
 .video{
@@ -13,6 +14,7 @@ video{
 }
 
 .vidContainer{
+  
   border-radius: 10px;
   border: 1px solid rgb(125,132,143);
   height: 198px;

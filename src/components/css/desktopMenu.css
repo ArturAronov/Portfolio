@@ -1,22 +1,26 @@
 #desktopMenu{
   color: black;
-  min-height: 500px;
-  width: 600px;
+  height: 70vh;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
   
+  justify-content: center;
   /* This centers the menu boxes relative to each other. */
 }
 
 #menuContainer{
   display: flex;
-  height: 70vh;
-  width: 100vw;
+  width: 600px;
+  display: flex;
+  
+  flex-wrap: wrap;
   justify-content: center;
+  align-content: center;
   /* This centers the menu in the middle of the page */
+}
+
+#menuContainer>div{
+  flex: 1;
+  /* This will stretch each box horizontally so that they will occupy entire width of the #menuContainer */
 }
 
 #desktopContainer{
@@ -25,14 +29,14 @@
 }
 
 .desktopBox{
+  
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1;
   /* The flex above centers text in the box */
 
-  /* min-width: 120px; */
-  /* height: 200px; */
+  transition: height .1s ease-in;
+
   margin: 4px;
   border-radius: 10px;
   font-family: 'Courier Prime', sans-serif;
