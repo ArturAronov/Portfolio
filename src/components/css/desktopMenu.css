@@ -31,8 +31,8 @@
   flex: 1;
   /* The flex above centers text in the box */
 
-  min-width: 120px;
-  height: 200px;
+  /* min-width: 120px; */
+  /* height: 200px; */
   margin: 4px;
   border-radius: 10px;
   font-family: 'Courier Prime', sans-serif;

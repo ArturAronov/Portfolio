@@ -5,7 +5,7 @@ export const HeaderMenu=function(){
       <div className='headerMenuElement'>
         About
       </div>
-      <div className='headerMenuElement'>
+      <div className='headerMenuElement' id='headerProjects'>
         Projects
       </div>
       <div className='headerMenuElement'>

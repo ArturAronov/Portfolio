@@ -4,6 +4,9 @@ import {Algorithms} from './desktopMenu/algorithms';
 import {About} from './desktopMenu/about';
 import {Contact} from './desktopMenu/contact';
 import {Projects} from './desktopMenu/projects';
+import {test, lol} from './../utils/test'
+
+import {MenuContainer} from './desktopMenu/menuContainer';
 
 import {Vid1} from './desktopMenu/vid1';
 import {Vid2} from './desktopMenu/vid2';
@@ -25,6 +28,14 @@ export const App=function(){
   const [sunDisplay, setSunDisplay]=useState('flex');
   const [moonDisplay, setMoonDisplay]=useState('none');
 
+  const [foo, setFoo]=useState(lol)
+
+
+  const [screenWidth, setScreenWidth]=useState(window.innerWidth);
+  const [screenHeight, setScreenHeight]=useState(window.innerHeight);
+
+  
+
   return(
     <div 
       id='desktopContainer'
@@ -39,7 +50,7 @@ export const App=function(){
           backgroundColor: background, 
           color: text
         }}>
-        <div id='header'>
+        <div id='header' style={{display: foo}}>
           <Heading/>
           <div 
             className='toggle'
@@ -59,7 +70,13 @@ export const App=function(){
         </div>
         
       </div>
-      <div 
+      <div>
+
+      </div>
+      <div>
+        <MenuContainer/>
+      </div>
+     {/*  <div 
         id='menuContainer'>
         <div id='desktopMenu'>
           <About/>
@@ -69,7 +86,7 @@ export const App=function(){
           <Vid2/>
           <Contact/>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
